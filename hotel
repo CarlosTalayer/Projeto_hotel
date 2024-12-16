@@ -1,0 +1,49 @@
+//PRIMEIRO CÓDIGO – USANDO O LAÇO DE REPETIÇÃO FOR
+for andar in range(20, 0, -1):     # Cria um loop que vai de 20 até 1, decrescendo 1 a cada passo.
+	if andar != 13:     # Verifica se o valor atual de 'andar' não é igual a 13.
+    print(andar)     # Se a condição for verdadeira, imprime o valor de 'andar'.
+//Esse código está usando um loop (giro) for para iterar do 20 até chegar o andar 1 (na ordem decrescente). O número 13 é excluído com a condição da segunda linha do código if andar != 13 .
+//Passo a passo:
+1.	for andar in range(20, 0, -1):
+•	A função range(20, 0, -1) cria uma sequência de números que começa em 20 e termina antes de 0.
+•	O terceiro argumento -1 especifica que os números devem ser gerados em ordem decrescente (diminuindo 1 a cada iteração).
+•	O loop for atribui cada número da sequência à variável andar, uma de cada vez.
+•	Isso significa que o loop percorre: 20, 19, 18, ..., 2, 1.
+
+2.	if andar != 13:
+•	Verifica se o valor atual de andar não é igual a 13.
+•	O operador != significa "diferente de".
+•	Se o valor for diferente de 13, o código dentro do bloco if será executado. Caso contrário, o bloco será ignorado.
+
+3.	print(andar)
+•	Mostra o valor atual de andar no console, mas somente se ele passou na verificação do if.
+•	Também significa que todos os números de 20 a 1 serão mostrados na tela, menos o número 13.
+SEGUNDO CÓDIGO – USANDO O LAÇO DE REPETIÇÃO WHILE
+andar = 20     # Inicializa a variável ‘andar’ com o valor máximo de (20).
+
+while andar > 0:     # Enquanto ‘andar’ for maior que zero, o laço vai continuar sendo executado.
+	if andar != 13:     # Verifica se ‘andar’ não é igual a 13 que corresponde ao 13° andar.
+		print(andar)     # Imprime o valor do andar.
+andar -= 1     # Decrementa ou diminui o valor de ‘andar’ em 1 (andares em ordem decrescente).
+//Passo a passo:
+1.	A variável ‘andar’ é iniciada com 20, que representa o último andar.
+2.	O laço while continua enquanto andar > 0.
+3.	Dentro do laço, é usada a condição if andar != 13 para evitar imprimir o número 13.
+4.	Cada iteração reduz o valor de andar em 1 (andar -= 1), indo do andar mais alto (20) até o primeiro andar no térreo (1).
+
+TERCEIRO CÓDIGO – USANDO O do-while com while
+*Mesmo sabendo que o python não tem um laço do-while
+
+  Andar = 20     # Inicializa a variável 'andar' com o valor máximo (20).
+While true:     # Criado um laço infinito que será interrompido manualmente.
+	if andar != 13:     # Verifica se 'andar' não é igual a 13.
+		print(andar)     # Imprime o valor do andar.
+	andar -= 1     # Decrementa ou diminui o valor de ‘andar’ em 1 (andares em ordem decrescente).
+	if andar == 0:     # Se 'andar' atingir 0, o laço é interrompido.
+		break     # Interrompe o laço.
+//Passo a passo:
+1.	Quando o laço com while true começa, ele começa a criar uma repetição infinita.
+2.	O número do andar é verificado, se não for o número 13, ele será impresso.
+3.	O valor de andar é reduzido em 1 a cada iteração.
+4.	Quando andar chega a 0, o laço é encerrado com a instrução break.
+
